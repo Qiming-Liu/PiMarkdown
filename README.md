@@ -1,5 +1,9 @@
 # PiMarkdown
-A log for my personal Raspberry Pi port usage
+A log for my personal Raspberry Pi port usage  
+
+```
+netstat -tln
+```
 
 > * SSH 22
 > * [KODI](http://192.168.0.104:8080/) 8080

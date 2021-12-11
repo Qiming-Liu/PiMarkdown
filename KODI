@@ -1,0 +1,23 @@
+sudo -i
+
+apt-get update
+
+apt-get install -y kodi kodi-pvr-iptvsimple
+ 
+cat > /etc/systemd/system/kodi.service <<EOF
+[Unit]
+Description=kodi server
+After=network.target
+Wants=network.target
+[Service]
+Type=simple
+ExecStart=/usr/bin/kodi
+RestartPreventExitStatus=1
+Restart=always
+User=root
+[Install]
+WantedBy=multi-user.target
+EOF
+ 
+systemctl start kodi
+systemctl enable kodi

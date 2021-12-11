@@ -1,4 +1,5 @@
 # install ntfs-3g first
-sudo fdisk -l
-mkdir -p /media/ssk
-sudo mount -t ntfs-3g /dev/sdb1 /media/ssk
+# sudo fdisk -l
+lsblk -fp
+# mkdir -p /mnt/ssk
+sudo mount -t ntfs-3g /dev/sdb1 /mnt/ssk

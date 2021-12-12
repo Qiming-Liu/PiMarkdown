@@ -1,2 +1,1 @@
-sudo -i
-jupyter notebook --allow-root
+sudo /root/.local/bin/jupyter notebook --allow-root

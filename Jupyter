@@ -7,3 +7,9 @@ apt-get install python3-pip
 pip3 -V
 
 pip3 install notebook
+
+#plugin
+sudo pip3 install jupyter_contrib_nbextensions
+sudo jupyter contrib nbextension install --user
+sudo pip3 install jupyter_nbextensions_configurator
+sudo jupyter nbextensions_configurator enable --user

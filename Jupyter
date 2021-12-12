@@ -1,0 +1,9 @@
+sudo -i
+
+apt update
+
+apt-get install python3-pip
+
+pip3 -V
+
+pip3 install notebook

@@ -1,3 +1,4 @@
+# RASPBERRY PI:
 sudo docker run -d \
   --name=qbittorrent \
   -e PUID=1000 \
@@ -9,3 +10,16 @@ sudo docker run -d \
   -v /home/pi/qbittorrent:/downloads \
   --restart unless-stopped \
   lscr.io/linuxserver/qbittorrent
+
+# LINUX SERVER:
+sudo docker run -d \
+  --name=qbittorrent \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e WEBUI_PORT=8081 \
+  -p 6881:6881 \
+  -p 6881:6881/udp \
+  -p 8081:8081 \
+  -v /root/downloads:/downloads \
+  --restart unless-stopped \
+  superng6/qbittorrent

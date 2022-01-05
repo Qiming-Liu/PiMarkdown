@@ -1,8 +1,9 @@
 # Download LineageOS 18.1 - KonstaKANG (Android 11)
 https://konstakang.com/devices/rpi4/
 
-# USB boot
-dtoverlay=android-usb in /boot/config.txt
+# USB boot in /boot/config.txt
+# Boot device
+dtoverlay=android-usb
 
 # OpenGApps
 https://sourceforge.net/projects/opengapps/files/

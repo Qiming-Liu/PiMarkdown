@@ -1,0 +1,17 @@
+# Download LineageOS 18.1 - KonstaKANG (Android 11)
+https://konstakang.com/devices/rpi4/
+
+# USB boot
+dtoverlay=android-usb in /boot/config.txt
+
+# OpenGApps
+https://sourceforge.net/projects/opengapps/files/
+
+Reboot to TWRP
+Install OpenGApps
+
+# SSH
+adb connect 192.168.0.104
+adb root
+adb pull /data/ssh/ssh_host_rsa_key my_private_key
+ssh -i my_private_key root@192.168.0.104
